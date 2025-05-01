@@ -20,7 +20,7 @@ with DAG (
             'START_DATE': '{{ data_interval_start | ds}}',
             'END_DATE': '{{ data_interval_end | ds}}',
         },
-        bash_command="echo 'data_interval_start, $START_DATE' && echo 'data_interval_end, $END_DATE'",
+        bash_command='echo data_interval_start, $START_DATE && echo data_interval_end, $END_DATE',
     )
 
     bash_t1 >> bash_t2
