@@ -4,7 +4,7 @@ import pendulum
 from airflow.operators.bash import BashOperator
 
 with DAG(
-    dag_id="plugins/shell_bash_select_fruit",
+    dag_id="dags_bash_select_fruit",
     schedule="10 0 * * 6#1",
     start_date=pendulum.datetime(2023, 10, 1, tz="Asia/Seoul"),
     catchup=False,
