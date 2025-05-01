@@ -29,7 +29,6 @@ with DAG(
         op_kwargs={'start_date': '{{ data_interval_start | ds }}', 'end_date': '{{ data_interval_end | ds }}'},
     )
 
-    # 데코레이터 태스크는 함수 호출로 인스턴스 생성
     python_t2 = python_function2()
 
     python_t1 >> python_t2
