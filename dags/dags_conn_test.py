@@ -4,7 +4,7 @@ import pendulum
 from airflow.operators.empty import EmptyOperator
 
 with DAG (
-    dag_id="dag_conn_test",
+    dag_id="dags_conn_test",
     schedule=None,
     start_date=pendulum.datetime(2023, 10, 1, tz="Asia/Seoul"),
     catchup=False,
