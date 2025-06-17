@@ -13,6 +13,6 @@ with DAG(
         env={
             "START_DATE": "{{ macros.ds_add(ds, -1) }}",
             "END_DATE": "{{ macros.ds_add(ds, 1) }}",
-        }
+        },
         bash_command='echo "START_DATE: $START_DATE" && echo "END_DATE: $END_DATE"'
     )
