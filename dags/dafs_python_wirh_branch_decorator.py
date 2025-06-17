@@ -6,7 +6,7 @@ from airflow.operators.python import PythonOperator
 
 with DAG(
     dag_id="dags_python_with_branch_decorator",
-    start_date=datetime(2023, 10, 1, tzinfo=pendulum.timezone("UTC")),
+    start_date=datetime(2023, 10, 1),
     schedule=None,
     catchup=False,
 ) as dag:
