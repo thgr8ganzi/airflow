@@ -7,7 +7,7 @@ from airflow.operators.python import PythonOperator
 with DAG(
     dag_id="dags_branch_python_operator",
     start_date=pendulum.datetime(2023, 10, 1, tz="UTC"),
-    schedule=NONE,
+    schedule=None,
     catchup=False,
 ) as dag:
     def select_random():
