@@ -4,8 +4,7 @@ from airflow import DAG
 import pendulum
 import datetime
 from airflow.decorators import task
-from airflow.operators.bash import BashOperator
-from airflow.operators.email import EmailOperator
+from airflow.providers.email.operators.email import EmailOperator
 
 with DAG (
     dag_id="dags_python_email_xcom",
