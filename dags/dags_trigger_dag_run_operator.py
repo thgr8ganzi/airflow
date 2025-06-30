@@ -18,7 +18,7 @@ with DAG(
         task_id="trigger_dag_task",
         trigger_dag_id="dags_python_operator",
         trigger_run_id=None,
-        execution_date='{{data_interval_start}}',
+        logical_date='{{data_interval_start}}',  # 또는 실제 datetime 객체/문자열
         reset_dag_run=True,
         wait_for_completion=False,
         poke_interval=60,
